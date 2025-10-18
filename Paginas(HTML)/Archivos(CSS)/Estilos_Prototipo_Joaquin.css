@@ -1,34 +1,85 @@
 p, h1, h2, h3, li, a{
     color:gold;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
 ul{
     list-style: none;
 }
 
-#menu li {
-    margin: 100% 0;
-    
-}
-
 body {
-    background-color: darkblue;
-    margin-left: 130px;
+    background-color: #001a66;
+    margin: 0;
+    display: flex;
 }
 
-#menu{
+#menu {
   position: fixed;
-      top: 0;
-      left: 0;
-      background-color:crimson;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      box-shadow: 2px 0 10px rgba(0,0,0,0.3);
+  top: 0;
+  left: 0;
+  width: 160px;
+  height: 100vh;
+  background-color: crimson;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 15px;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.4);
+}
+
+#menu img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+#menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+
+#menu li {
+  margin: 40px 0;
+}
+
+#menu a {
+  text-decoration: none;
+  color: yellow;
+  display: block;
+  transition: color 0.3s ease;
+}
+
+#menu a:hover {
+  color: white;
 }
 
 #logo {
     display: inline; float: right;
 }
 
+#Contenido {
+  margin-left: 200px;
+  padding: 30px;
+  max-width: 1000px;
+}
+
+iframe {
+  border-radius: 10px;
+}
+
+#Contenido img {
+    border-radius: 10px;
+}
+
+#descripcion{
+    color: white;
+}
+
+#Contenido ul {
+  columns: 2;
+  margin-top: 20px;
+}
 
