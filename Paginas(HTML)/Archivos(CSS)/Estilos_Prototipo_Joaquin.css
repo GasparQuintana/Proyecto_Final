@@ -83,3 +83,38 @@ iframe {
   margin-top: 20px;
 }
 
+#contenedor{
+  border: 5px solid yellow;
+  height: 500px;
+  width: 1200px;
+  overflow: hidden;
+}
+
+.itemcarrusel{
+
+  height: 100%;
+  position: relative;
+}
+.tarjetacarrusel{
+  
+  height: 100%;
+}
+.flechacarrusel{
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+justify-content: space-between;
+ 
+}
+.flechacarrusel i{
+font-size: 100px;
+background-color: crimson;
+
+}
+.flechacarrusel a{
+  text-decoration: none;
+  
+}
