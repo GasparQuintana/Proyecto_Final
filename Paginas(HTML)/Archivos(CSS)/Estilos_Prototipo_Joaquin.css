@@ -71,7 +71,7 @@ iframe {
 }
 
 #Contenido img {
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 #descripcion{
@@ -84,21 +84,23 @@ iframe {
 }
 
 #contenedor{
-  border: 5px solid yellow;
   height: 500px;
-  width: 1200px;
+  width: 1000px;
   overflow: hidden;
 }
 
 .itemcarrusel{
-
   height: 100%;
   position: relative;
 }
 .tarjetacarrusel{
-  
   height: 100%;
 }
+.tarjetacarrusel img{
+  width: 100%;
+  height: 90%;
+}
+
 .flechacarrusel{
   position: absolute;
   top: 0;
@@ -112,6 +114,7 @@ justify-content: space-between;
 .flechacarrusel i{
 font-size: 100px;
 background-color: crimson;
+border-radius: 20px;
 
 }
 .flechacarrusel a{
