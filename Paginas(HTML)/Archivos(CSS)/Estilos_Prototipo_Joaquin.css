@@ -89,7 +89,11 @@ iframe {
   width: 1000px;
   overflow: hidden;
 }
-
+#contenedor_comics{
+  height: 240px;
+  width: 360px;
+  overflow: hidden;
+}
 .itemcarrusel{
   height: 100%;
   position: relative;
@@ -135,3 +139,27 @@ background-color: rgb(4, 4, 65);
 
 }
 
+#nav{
+  
+  width: 100%;
+  height: 100%;
+background-color: crimson;
+border-radius: 10px;
+text-align: center;
+display: flex;
+flex-direction: column;
+align-items: center;
+border: 1px solid gold;
+margin-top: 20px;
+}
+#nav a{
+  text-decoration: none;
+border-radius: 5px;
+}
+#nav p{
+  background-color: #001a66;
+  border: 1px solid gold;
+  font-size: 35px;
+  letter-spacing: 5px;
+  border-radius: 1px;
+}
