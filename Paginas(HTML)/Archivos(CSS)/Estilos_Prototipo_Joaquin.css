@@ -187,3 +187,6 @@ border-radius: 5px;
  
   transform: scale(1.2);
 }
+#listado a{
+  text-decoration: none;
+}
