@@ -99,11 +99,13 @@ iframe {
   width: 1000px;
   overflow: hidden;
 }
+
 #contenedor_comics{
-  height: 240px;
-  width: 360px;
+  height: 720px;
+  width: 480px;
   overflow: hidden;
 }
+
 .itemcarrusel{
   height: 100%;
   position: relative;
@@ -145,8 +147,6 @@ width: 100%;
 height: 10%;
 background-color: rgb(4, 4, 65);
 
-
-
 }
 
 #nav{
@@ -171,8 +171,4 @@ border-radius: 5px;
   font-size: 35px;
   letter-spacing: 5px;
   border-radius: 1px;
-}
-#nav p:hover{
-    background-color: red;
-  transform: scale(1.1);
 }
