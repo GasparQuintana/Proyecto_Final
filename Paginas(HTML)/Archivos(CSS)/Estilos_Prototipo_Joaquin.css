@@ -190,3 +190,15 @@ border-radius: 5px;
 #listado a{
   text-decoration: none;
 }
+
+#listado img:hover{
+ filter: brightness(70%); 
+}
+
+.flecha_carrusel a, i:hover{
+  filter:brightness(70%)
+}
+
+#mercadito img:hover{
+  filter:brightness(70%)
+}
