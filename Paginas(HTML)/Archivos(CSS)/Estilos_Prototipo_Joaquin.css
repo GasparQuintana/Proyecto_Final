@@ -190,22 +190,3 @@ border-radius: 5px;
 #listado a{
   text-decoration: none;
 }
-
-#carrito{
-  background-color: crimson;
-  align-items: center;
-  text-align: center;
-  border-radius: 5px;
-  margin: 5px;
-}
-.tienda button{
-  background-color: crimson;
-  color: gold;
-  border: 5px;
-  border-color: 5px solid gold;
-  border-radius: 3px;
-  margin-bottom: 10px;
-}
-.tienda button:hover{
-  
-}
