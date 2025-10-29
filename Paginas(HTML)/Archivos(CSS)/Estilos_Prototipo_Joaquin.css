@@ -138,7 +138,9 @@ border-radius: 20px;
   text-decoration: none;
   
 }
-
+.flechacarrusel a:hover{
+  filter: brightness(70%);
+}
 #foot{
   text-align: center;
 align-items: center;
@@ -190,6 +192,10 @@ border-radius: 5px;
 #listado a{
   text-decoration: none;
 }
+#listado img:hover{
+  filter: brightness(70%);
+}
+
 #carrito{
   background-color: crimson;
   align-items: center;
