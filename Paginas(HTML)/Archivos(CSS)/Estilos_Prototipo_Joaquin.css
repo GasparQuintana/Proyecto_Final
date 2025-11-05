@@ -202,6 +202,7 @@ border-radius: 5px;
   text-align: center;
   border-radius: 5px;
   margin: 5px;
+  padding: 10px;
 }
 .tienda button{
   background-color: crimson;
@@ -210,7 +211,149 @@ border-radius: 5px;
   border-color: 5px solid gold;
   border-radius: 3px;
   margin-bottom: 10px;
+  font-size: 20px;
 }
 .tienda button:hover{
   filter: brightness(70%);
+}
+.tienda button:active{
+  filter: brightness(100%);
+  background-color: gold;
+  transform: scale(1.2);
+}
+#lista-carrito button{
+  color: gold;
+  background-color: #001a66;
+  border: solid 1px gold;
+  border-radius: 5px;
+}
+#lista-carrito button:hover{
+  filter: brightness(70%);
+  transform: scale(1.2);
+}
+#lista-carrito button:active{
+  filter: brightness(100%);
+  background-color: crimson;
+}
+
+#f1{
+  font-size: large;
+  color: gold;
+   border: solid 5px gold;
+  border-radius: 5px;
+  background-color: crimson;
+  margin-bottom: 30px;
+  padding: 5px;
+}
+#f1 input{
+  background-color: #001a66;
+  color: gold;
+  border: gold solid 2px;
+}
+#f1 input::placeholder{
+  color: gold;
+  filter: brightness(70%);
+}
+
+#f2{
+  font-size: large;
+  color: gold;
+   border: solid 5px gold;
+  border-radius: 5px;
+  background-color: crimson;
+  margin-bottom: 30px;
+  padding: 5px;
+}
+#f2 input{
+  background-color: #001a66;
+  color: gold;
+  border: gold solid 2px;
+}
+#f2 input::placeholder{
+  color: gold;
+  filter: brightness(70%);
+}
+#f3{
+  font-size: large;
+  color: gold;
+   border: solid 5px gold;
+  border-radius: 5px;
+  background-color: crimson;
+  margin-bottom: 30px;
+  padding: 5px;
+}
+#f3 input{
+  background-color: #001a66;
+  color: gold;
+  border: gold solid 2px;
+}
+#pagar{
+  text-decoration: none;
+  background-color: #001a66;
+  border: 1px solid gold;
+  border-radius: 1px;
+  font-size: large;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+#pagar:hover{
+  background-color: green;
+  
+}
+#ff1{
+  align-items: center;
+  text-align: center;
+  
+  font-size: large;
+  color: gold;
+   border: solid 5px gold;
+  border-radius: 5px;
+  background-color: crimson;
+  margin-bottom: 30px;
+  padding: 30px;
+}
+#ff1 input{
+  background-color: #001a66;
+  color: gold;
+  border: gold solid 2px;
+}
+#ff1 input::placeholder{
+  color: gold;
+  filter: brightness(70%);
+}
+#ff2{
+  align-items: center;
+  text-align: center;
+  
+  font-size: large;
+  color: gold;
+   border: solid 5px gold;
+  border-radius: 5px;
+  background-color: crimson;
+  margin-bottom: 30px;
+  padding: 30px;
+}
+#ff2 textarea::placeholder{
+  color: gold;
+  filter: brightness(70%);
+}
+#ff2 textarea{
+background-color: #001a66;
+color: gold;
+border: 1px solid gold;
+
+}
+#ff2 input{
+  font-size: 30px;
+  background-color: #001a66;
+  color: gold;
+  border: gold solid 2px;
+}
+#ff2 input:hover{
+transform: scale(1.2);
+filter: brightness(70%);
+}
+#ff2 input:active{
+ filter: brightness(100%);
+  background-color: crimson;
 }
