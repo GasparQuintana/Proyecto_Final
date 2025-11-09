@@ -29,33 +29,48 @@
 <br>
 <p>Correo:Spider-Web_Oficial@spider-mail.com    Twitter:@Spider-Web_oficial     Número de contacto: 54 9 299 123 4567</p>
 <br>
-<form action="">
-<div id="ff1">
+<form id="formulario">
+  <div id="ff1" class="form__grupo" id="grupo__nom">
     <label for="n">Nombre</label><br>
-<input type="text" placeholder="Nombre" name="n"><br>
-<label for="a">Apellido</label><br>
-<input type="text" placeholder="Apellido" name="a"><br>
-<label for="d">Correo electronico</label><br>
-<input type="email" placeholder="Peterparker@spidermail.com" name="d"><br>
+    <div class="form__grupo-input" id="grupo__nom">
+      <input type="text" placeholder="Nombre" name="n" id="nom">
+      <p class="form__input-error">Solo letras y espacios (mínimo 3)</p>
+    </div>
+
+    <label for="a">Apellido</label><br>
+    <div class="form__grupo-input" id="grupo__ape">
+      <input type="text" placeholder="Apellido" name="a" id="ape">
+      <p class="form__input-error">Solo letras y espacios (mínimo 3)</p>
+    </div>
+
+    <label for="correo">Correo electrónico</label><br>
+    <div class="form__grupo-input" id="grupo__correo">
+      <input type="email" placeholder="Peterparker@spidermail.com" name="correo" id="correo">
+      <p class="form__input-error">Debe tener un formato válido (ej: usuario@gmail.com)</p>
+    </div>
+  </div>
+
+  <div id="ff2" class="form__grupo" id="grupo__op">
+    <label for="op">Opinión</label><br>
+    <div class="form__grupo-input" id="grupo__op">
+      <textarea name="op" id="op" placeholder="¿Qué piensa de la página?" cols="100" rows="10"></textarea><br>
+      <p class="form__input-error">La opinión debe tener al menos 10 caracteres</p>
+    </div>
+  </div>
+
+  <input type="submit" value="Subir Opinión">
+</form>
+
+<script src="formulario-opinion.js"></script>
+
+
 
 </div>
-<div id="ff2">
-    <label for="op">OPINION</label><br>
-    <textarea name="op" id="op" placeholder="¿que Piensa De la pagina?" cols="100" rows="10"></textarea><br>
-    <input type="submit" value="Subir Opinion">
-
-</div>
-
-
 
 
 </form>
 
-
-
 </div>
-<!--Incluir Formulario para que se nos mande un correo electronico pidiendo el nombre
-y el comentario que el usuario quiera enviar.-->
 
 <div id="foot">
     
@@ -63,6 +78,7 @@ y el comentario que el usuario quiera enviar.-->
 <img src="Imagenes_HTML/loguito.png" alt="logo" width="50px" height="50px">
 </div>
 
+<script src="Archivos(JavaScript)/JavaScript_Contacto_Joaquin.js"></script>
 </body>
 
 </html>

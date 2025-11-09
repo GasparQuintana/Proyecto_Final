@@ -5,7 +5,6 @@
 <link rel="stylesheet" type="text/css" href="Archivos(CSS)/Estilos_Prototipo_Joaquin.css" title="style" />
 
 <title>Spider-WEB_Mercado</title>
-<script src="Archivos(JavaScript)/Javascript_Prototipo_Gaspar.js"></script>
 
 </head>
 
@@ -26,34 +25,72 @@
         
 <div id="Contenido">
 
-<form>
-    <div id="f1">
-    <label for="n">Nombre</label><br>
-<input type="text" placeholder="Nombre" name="n"><br>
-<label for="a">Apellido</label><br>
-<input type="text" placeholder="Apellido" name="a"><br>
-<label for="d">Direccion</label><br>
-<input type="text" placeholder="Direccion" name="d"><br>
-<label for="c">Codigo postal</label><br>
-<input type="text" placeholder="Codigo postal" name="c"><br>
-</div>
+<form id="formulario">
+  <div id="f1">
+    <div class="form__grupo" id="grupo__nom">
+      <label for="nom" class="form__label">Nombre</label>
+      <div class="form__grupo-input">
+        <input type="text" class="form__input" name="n" id="nom" placeholder="Nombre">
+        <p class="form__input-error">El nombre solo puede contener letras y espacios.</p>
+      </div>
+    </div>
 
-<div id="f2">
-    <label for="t">Tarjeta de credito</label><br>
-<input type="text" placeholder="5555 5555 555 5555" name="t"><br>
-<label for="c">Codigo de seguridad</label><br>
-<input type="text" placeholder="Codigo de seguridad" name="c"><br>
-</div>
+    <div class="form__grupo" id="grupo__ape">
+      <label for="ape" class="form__label">Apellido</label>
+      <div class="form__grupo-input">
+        <input type="text" class="form__input" name="a" id="ape" placeholder="Apellido">
+        <p class="form__input-error">El apellido solo puede contener letras y espacios.</p>
+      </div>
+    </div>
 
-<div id="f3">
-    <label for="v">Acepta los terminos y coindiciones de Spider-Web(no hay)</label> <br>
-    <input type="checkbox" name="v"> <br>
-<input type="submit" value="comprar">
-<input type="reset" value="borrar">
+    <div class="form__grupo" id="grupo__dir">
+      <label for="dir" class="form__label">Dirección</label>
+      <div class="form__grupo-input">
+        <input type="text" class="form__input" name="d" id="dir" placeholder="Dirección">
+        <p class="form__input-error">La dirección debe tener al menos 5 caracteres.</p>
+      </div>
+    </div>
 
-</div>
+    <div class="form__grupo" id="grupo__cod">
+      <label for="cod" class="form__label">Código postal</label>
+      <div class="form__grupo-input">
+        <input type="text" class="form__input" name="c" id="cod" placeholder="Código postal">
+        <p class="form__input-error">Debe contener 4 números.</p>
+      </div>
+    </div>
+  </div>
 
+  <div id="f2">
+    <div class="form__grupo" id="grupo__tar">
+      <label for="tar" class="form__label">Tarjeta de crédito</label>
+      <div class="form__grupo-input">
+        <input type="text" class="form__input" name="t" id="tar" placeholder="5555 5555 5555 5555">
+        <p class="form__input-error">Debe tener 16 dígitos.</p>
+      </div>
+    </div>
 
+    <div class="form__grupo" id="grupo__segu">
+      <label for="segu" class="form__label">Código de seguridad</label>
+      <div class="form__grupo-input">
+        <input type="text" class="form__input" name="cs" id="segu" placeholder="Código de seguridad">
+        <p class="form__input-error">Debe tener 3 números.</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="f3">
+    <div class="form__grupo" id="grupo__terminos">
+      <label for="terminos" class="form__label">
+        <input type="checkbox" name="v" id="terminos">
+        Acepto los términos y condiciones
+      </label>
+    </div>
+
+    <div class="form__grupo form__grupo-btn">
+      <input type="submit" id="pagar" value="Comprar">
+      <input type="reset" value="Borrar">
+    </div>
+  </div>
 </form>
 
 
@@ -64,6 +101,8 @@
     <p><a href="https://es.wikipedia.org/wiki/Spider-Man">Ayuda</a> <a href="CONTACTO_Prototipo_Joaquin.html">Contacto</a> <br> Todos los derechos reservados Ignacio Joaquin Vallejos Monsalbe Y Gaspar Elian Quintana Lauphan(Y tambien Marvel pero no importa)</p>
 <img src="Imagenes_HTML/loguito.png" alt="logo" width="50px" height="50px">
 </div>
+
+<script src="Archivos(JavaScript)/Javascript_Prototipo_Gaspar.js"></script>
 
     </body>
 

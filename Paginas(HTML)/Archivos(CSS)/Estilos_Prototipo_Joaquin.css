@@ -239,7 +239,7 @@ border-radius: 5px;
 #f1{
   font-size: large;
   color: gold;
-   border: solid 5px gold;
+   border: solid 3px gold;
   border-radius: 5px;
   background-color: crimson;
   margin-bottom: 30px;
@@ -258,7 +258,7 @@ border-radius: 5px;
 #f2{
   font-size: large;
   color: gold;
-   border: solid 5px gold;
+   border: solid 3px gold;
   border-radius: 5px;
   background-color: crimson;
   margin-bottom: 30px;
@@ -276,7 +276,7 @@ border-radius: 5px;
 #f3{
   font-size: large;
   color: gold;
-   border: solid 5px gold;
+   border: solid 3px gold;
   border-radius: 5px;
   background-color: crimson;
   margin-bottom: 30px;
@@ -301,12 +301,9 @@ border-radius: 5px;
   
 }
 #ff1{
-  align-items: center;
-  text-align: center;
-  
   font-size: large;
   color: gold;
-   border: solid 5px gold;
+   border: solid 3px gold;
   border-radius: 5px;
   background-color: crimson;
   margin-bottom: 30px;
@@ -322,12 +319,9 @@ border-radius: 5px;
   filter: brightness(70%);
 }
 #ff2{
-  align-items: center;
-  text-align: center;
-  
   font-size: large;
   color: gold;
-   border: solid 5px gold;
+   border: solid 3px gold;
   border-radius: 5px;
   background-color: crimson;
   margin-bottom: 30px;
@@ -356,4 +350,37 @@ filter: brightness(70%);
 #ff2 input:active{
  filter: brightness(100%);
   background-color: crimson;
+}
+
+.form__grupo {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.form__grupo-input {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.form__input-error {
+  color: gold;
+  font-size: 14px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.form__grupo-incorrecto .form__input-error {
+  opacity: 1;
+  color: yellow;
+}
+
+.form__grupo-incorrecto .form__input {
+  border: 2px solid red;
+  background-color: #660000;
+}
+
+.form__grupo-correcto .form__input {
+  border: 2px solid lime;
+  background-color: #003300;
 }
