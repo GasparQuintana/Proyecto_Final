@@ -38,12 +38,12 @@ const validarCampo = (expresion, input, campo) => {
   if (expresion.test(input.value)) {
     grupo.classList.remove('form__grupo-incorrecto');
     grupo.classList.add('form__grupo-correcto');
-    grupo.querySelector('.form__input-error').classList.remove('form__input-error-activo');
+    grupo.querySelector('.form__input-error')
     campos[input.name] = true;
   } else {
     grupo.classList.add('form__grupo-incorrecto');
     grupo.classList.remove('form__grupo-correcto');
-    grupo.querySelector('.form__input-error').classList.add('form__input-error-activo');
+    grupo.querySelector('.form__input-error')
     campos[input.name] = false;
   }
 };

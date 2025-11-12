@@ -33,10 +33,10 @@ let carrito = [];
 const formulario = document.getElementById('formulario');
 const inputs = document.querySelectorAll('#formulario input');
 
+// Expresiones regulares
 const expresiones = {
   n: /^[a-zA-ZÀ-ÿ\s]{3,40}$/, 
   a: /^[a-zA-ZÀ-ÿ\s]{3,40}$/, 
-  correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
   d: /^.{5,60}$/,              
   c: /^\d{4}$/,               
   t: /^\d{16}$/,               
@@ -72,12 +72,6 @@ const validarFormulario = (e) => {
     case "cs":
       validarCampo(expresiones.cs, e.target, 'segu');
       break;
-    case "correo":
-      validarCampo(expresiones.correo, e.target, 'correo');
-        break;
-    case "op":
-      validarCampo(expresiones.op, e.target, 'op');
-  break;
   }
 };
 
@@ -86,12 +80,12 @@ const validarCampo = (expresion, input, campo) => {
   if (expresion.test(input.value)) {
     grupo.classList.remove('form__grupo-incorrecto');
     grupo.classList.add('form__grupo-correcto');
-    grupo.querySelector('.form__input-error').classList.remove('form__input-error-activo');
+    grupo.querySelector('.form__input-error');
     campos[input.name] = true;
   } else {
     grupo.classList.add('form__grupo-incorrecto');
     grupo.classList.remove('form__grupo-correcto');
-    grupo.querySelector('.form__input-error').classList.add('form__input-error-activo');
+    grupo.querySelector('.form__input-error');
     campos[input.name] = false;
   }
 };
@@ -109,9 +103,6 @@ formulario.addEventListener('submit', (e) => {
   if (campos.n && campos.a && campos.d && campos.c && campos.t && campos.cs && terminos.checked) {
     alert('Compra realizada');
     formulario.reset();
-    document.querySelectorAll('.form__grupo-correcto').forEach((grupo) => {
-      grupo.classList.remove('form__grupo-correcto');
-    });
   } else {
     alert('Por favor completá todos los campos correctamente');
   }
