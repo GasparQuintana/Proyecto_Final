@@ -374,13 +374,3 @@ filter: brightness(70%);
   opacity: 1;
   color: yellow;
 }
-
-.form__grupo-incorrecto .form__input {
-  border: 2px solid red;
-  background-color: #660000;
-}
-
-.form__grupo-correcto .form__input {
-  border: 2px solid lime;
-  background-color: #003300;
-}
